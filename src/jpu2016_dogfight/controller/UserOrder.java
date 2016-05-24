@@ -2,7 +2,7 @@ package jpu2016_dogfight.controller;
 
 public class UserOrder implements IUserOrder{
 	
-	protected int player;
+	private int player;
 
 	public  UserOrder(int player, Order order) {
 		
