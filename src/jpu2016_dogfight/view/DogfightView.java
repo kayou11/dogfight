@@ -4,7 +4,7 @@ import java.util.Observable;
 import jpu2016_dogfight.controller.IOrderPerformer;
 import jpu2016_dogfight.model.IDogfightModel;
 
-public abstract class DogfightView implements Runnable, IViewSystem{
+public class DogfightView implements Runnable, IViewSystem{
 
 	private IOrderPerformer orderPerformer;
 	private IDogfightModel dogfightModel;

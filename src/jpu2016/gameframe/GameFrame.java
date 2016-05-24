@@ -1,30 +1,35 @@
 package jpu2016.gameframe;
 
+import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 import javax.swing.JFrame;
 
-import com.sun.glass.events.KeyEvent;
-
 import javafx.beans.Observable;
 
-public abstract class GameFrame extends JFrame implements KeyListener{
+public class GameFrame extends JFrame implements KeyListener{
 
 	private IEventPerformer eventPerformer; 
 		
 	public GameFrame(String title, IEventPerformer performer, IGraphicsBuilder graphicBuilder, Observable observable) {	
 		this.eventPerformer = performer;
 	}
-	
-	public void keyPressed(KeyEvent keyEvent) {
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
 		
 	}
-	
-	public void keyReleased(KeyEvent keyEvent) {
+
+	@Override
+	public void keyPressed(KeyEvent e) {
+		// TODO Auto-generated method stub
 		
 	}
-	
-	public void keyTyped(KeyEvent keyEvent) {
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
 		
 	}
 	
