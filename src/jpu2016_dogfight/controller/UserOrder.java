@@ -9,6 +9,8 @@ public class UserOrder implements IUserOrder{
 	
 		
 	}
+	
+	@Override
 	public int getPlayer() {
 		return player;
 	}
@@ -17,6 +19,7 @@ public class UserOrder implements IUserOrder{
 		this.player = player;
 	}
 	
+	@Override
 	public Order getOrder() {
 		return this.order;
 	}
