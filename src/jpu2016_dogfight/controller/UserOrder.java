@@ -7,7 +7,8 @@ public class UserOrder implements IUserOrder{
 	
 	public  UserOrder(int player, Order order) {
 	
-		
+		this.order = order;
+		this.player = player;
 	}
 	
 	@Override

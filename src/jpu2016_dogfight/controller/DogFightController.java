@@ -1,16 +1,18 @@
 package jpu2016_dogfight.controller;
 
 import jpu2016.dogfight.model.IDogfightModel;
+import jpu2016.dogfight.model.Missile;
 import jpu2016.dogfight.view.IViewSystem;
+import jpu2016_dogfight.controller.UserOrder;
 
 public class DogFightController implements IOrderPerformer{
 	
-	protected int TME_SPLEEP = 30;
+	protected static int TME_SPLEEP = 30;
 	private IViewSystem viewSystem;
 	private IDogfightModel dogfightModel;
 	
 	public  DogFightController(IDogfightModel dogfightModel) {
-		
+		this.dogfightModel = dogfightModel;
 	}
 	
 	@Override
@@ -27,7 +29,7 @@ public class DogFightController implements IOrderPerformer{
 	}
 	
 	private void lauchMissile(int player){
-		
+
 	}
 	
 	private void gameLoop(){

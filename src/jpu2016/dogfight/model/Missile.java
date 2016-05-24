@@ -8,6 +8,7 @@ public class Missile {
 	private int MAX_DISTANCE_TRAVELED = 1400;
 	private String IMAGE = "Missile";
 	private int distanceTraveled = 0;
+	
 	public Missile(Direction direction, Dimension dimension){
 		
 	}
