@@ -1,11 +1,12 @@
-package jpu2016.dogfight.view;
+package jpu2016_dogfight.view;
 
 import java.awt.Graphics;
 import java.awt.image.ImageObserver;
 
-import jpu2016.dogfight.model.IDogfightModel;
-import jpu2016.dogfight.model.IMobile;
-import java.awt.image;
+import jpu2016_dogfight.model.IDogfightModel;
+import jpu2016_dogfight.model.IMobile;
+
+import java.awt.image.BufferedImage;
 
 public class GraphicsBuilder {
 
@@ -13,6 +14,7 @@ public class GraphicsBuilder {
 	
 	public GraphicsBuilder(IDogfightModel dogfightModel) {
 		this.dogfightModel = dogfightModel;
+		
 	}
 	
 	public void applyModelToGraphic(Graphics graphics, ImageObserver observer) {

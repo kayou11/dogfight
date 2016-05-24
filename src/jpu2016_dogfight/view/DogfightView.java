@@ -1,13 +1,17 @@
-package jpu2016.dogfight.view;
+package jpu2016_dogfight.view;
 
-import javafx.beans.Observable;
-import jpu2016.dogfight.model.IDogfightModel;
+import java.util.Observable;
 import jpu2016_dogfight.controller.IOrderPerformer;
+import jpu2016_dogfight.model.IDogfightModel;
 
 public abstract class DogfightView implements Runnable, IViewSystem{
 
+	private IOrderPerformer orderPerformer;
+	private IDogfightModel dogfightModel;
+	
 	public DogfightView(IOrderPerformer orderPerformer,IDogfightModel dogfightModel, Observable observable) {
-		
+		this.dogfightModel = dogfightModel;
+		this.orderPerformer = orderPerformer;
 	}
 
 	@Override

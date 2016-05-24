@@ -1,4 +1,4 @@
-package jpu2016.dogfight.model;
+package jpu2016_dogfight.model;
 
 public class Plane {
 	private static int SPEED = 2;

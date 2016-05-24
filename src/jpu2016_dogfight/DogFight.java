@@ -10,7 +10,7 @@ public abstract class DogFight{
 		
 		final DogfightModel dogfightModel = new DogfightModel();
 		final DogFightController dogfightController = new DogFightController(dogfightModel); 
-		final DogfightView dogfightView = new dog
+		final DogfightView dogfightView = new DogfightView(dogfightController, dogfightModel, dogfightModel);
 		dogfightController.setViewSystem(dogfightView);
 		dogfightController.play();
 	}
