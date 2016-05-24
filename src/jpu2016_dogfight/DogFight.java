@@ -1,4 +1,4 @@
-package dogFight;
+package jpu2016_dogfight;
 
 public abstract class DogFight{
 	
