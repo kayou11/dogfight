@@ -1,5 +1,13 @@
 package jpu2016.dogfight.model;
 
+import java.util.ArrayList;
+
 public interface IDogfightModel {
-//test
+IArea getArea();
+void buildArea(Dimension dimension);
+void addMobile(Mobile mobile);
+void removeMobile(Mobile mobile);
+ArrayList<IMobile> getMobile();
+IMobile getMobileByPlayer(int player);
+void setMobilesHavesMoved();
 }
