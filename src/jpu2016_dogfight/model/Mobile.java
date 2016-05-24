@@ -28,9 +28,9 @@ public class Mobile implements IMobile{
 		
 	}
 	@Override
-	public Point getPosition() {
+	public Position getPosition() {
 		// TODO Auto-generated method stub
-		return new Point(position.getX(), position.getY());
+		return this.position;
 	}
 	
 	@Override
