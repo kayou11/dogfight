@@ -1,9 +1,9 @@
 package jpu2016_dogfight.controller;
 
-import jpu2016.dogfight.model.IDogfightModel;
-import jpu2016.dogfight.model.Missile;
-import jpu2016.dogfight.view.IViewSystem;
 import jpu2016_dogfight.controller.UserOrder;
+import jpu2016_dogfight.model.IDogfightModel;
+import jpu2016_dogfight.model.Missile;
+import jpu2016_dogfight.view.IViewSystem;
 
 public class DogFightController implements IOrderPerformer{
 	
