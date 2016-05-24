@@ -6,7 +6,9 @@ import jpu2016.dogfight.view.IViewSystem;
 public class DogFightController implements IOrderPerformer{
 	
 	protected int TME_SPLEEP = 30;
-
+	private IViewSystem viewSystem;
+	private IDogfightModel dogfightModel;
+	
 	public  DogFightController(IDogfightModel dogfightModel) {
 		
 	}
@@ -21,7 +23,7 @@ public class DogFightController implements IOrderPerformer{
 	}
 	
 	public void setViewSystem(IViewSystem viewSystem) {
-		
+		this.viewSystem = viewSystem;
 	}
 	
 	private void lauchMissile(int player){
