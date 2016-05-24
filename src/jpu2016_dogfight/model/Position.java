@@ -12,8 +12,8 @@ public class Position {
 		this.y = y;
 		this.maxX = maxX;
 		this.maxY = maxY;
-				
 	}
+	
 	public Position(Position position){
 		
 	}

@@ -1,6 +1,6 @@
 package jpu2016_dogfight.model;
 
-public class Missile {
+public class Missile extends Mobile{
 	
 	private static int SPEED = 4;
 	private static int WIDTH = 100;
@@ -9,8 +9,9 @@ public class Missile {
 	private static String IMAGE = "Missile";
 	private int distanceTraveled = 0;
 	
-	public Missile(Direction direction, Dimension dimension){
+	public Missile(Direction direction, Position position){
 		
+		super(direction, position, new Dimension(WIDTH,HEIGHT), SPEED, IMAGE);
 	}
 	public static int getWidthADirection(Direction direction) {
 		return WIDTH;
@@ -20,10 +21,10 @@ public class Missile {
 		return HEIGHT;
 		
 	}
-	void move() {
+	public void move() {
 		
 	}
-	boolean isWeapon() {
+	public boolean isWeapon() {
 		return false;
 		
 	}

@@ -14,4 +14,5 @@ public abstract class DogFight{
 		dogfightController.setViewSystem(dogfightView);
 		dogfightController.play();
 	}
+	
 }
