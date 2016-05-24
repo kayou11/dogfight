@@ -24,11 +24,11 @@ public class DogFightController implements IOrderPerformer{
 		
 	}
 	
-	protected void lauchMissile(int player){
+	private void lauchMissile(int player){
 		
 	}
 	
-	protected void gameLoop(){
+	private void gameLoop(){
 		
 	}
 }
